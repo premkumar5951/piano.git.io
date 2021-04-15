@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="ls
+    width=device-width, initial-scale=0.70,user-scalable=no"/>
+    <title>Piano</title>
+    <link rel="stylesheet" href="./css/piano.css">
+    <script src="https://kit.fontawesome.com/0e767e0926.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="text">
+        <h1 class="head">MUSIC IS <i class="fas fa-heartbeat fa-2x"></i></h1>
+    </div>
+        
+        <div class="wrap">
+        <div class="black">
+<div class="bigb bigb1 ">
+    <div class="twob twob1">
+<div class="keyblack "  onmousedown="f1()"><h3>1</h3></div>
+<div class="keyblack"  onmousedown="f2()"><h3>2</h3></div>
+    </div>
+    <div class="threeb threeb1 ">
+        <div class="keyblack"  onmousedown="f3()"><h3>3</h3></div>
+        <div class="keyblack"  onmousedown="f4()"><h3>4</h3></div>
+        <div class="keyblack"  onmousedown="f5()"><h3>5</h3></div>
+    </div>
+</div>
+<div class="bigb bigb2">
+    <div class="twob twob2">
+<div class="keyblack" onmousedown="f6()"><h3>6</h3></div>
+<div class="keyblack" onmousedown="f7()"><h3>7</h3></div>
+    </div>
+    <div class="threeb threeb2">
+        <div class="keyblack" onmousedown="f8()"><h3>8</h3></div>
+        <div class="keyblack" onmousedown="f9()"><h3>9</h3></div>
+        <div class="keyblack"  onmousedown="f10()" ><h3>0</h3></div>
+    </div>
+</div>
+<div class="bigb bigb3">
+    <div class="twob twob3 ">
+<div class="keyblack"  onmousedown="f11()" ><h3>U</h3></div>
+<div class="keyblack"  onmousedown="f12()"><h3>I</h3></div>
+    </div>
+    <div class="threeb threeb3">
+        <div class="keyblack"  onmousedown="num1()"><h3>O</h3></div>
+        <div class="keyblack"  onmousedown="num2()"><h3>P</h3></div>
+        <div class="keyblack"  onmousedown="num3()"><h3>f4</h3></div>
+    </div>
+   
+</div>
+        </div>
+        <div class="white">
+            <div class="keywhite" onmousedown="a1()"><h3>A</h3></div>
+            <div class="keywhite" onmousedown="a2()"><h3>S</h3></div>
+            <div class="keywhite" onmousedown="a3()"><h3>D</h3></div>
+            <div class="keywhite" onmousedown="a4()"><h3>F</h3></div>
+            <div class="keywhite" onmousedown="a5()"><h3>G</h3></div>
+            <div class="keywhite" onmousedown="a6()"><h3>H</h3></div>
+            <div class="keywhite" onmousedown="a7()"><h3>J</h3></div>
+            <div class="keywhite" onmousedown="b0()"><h3>K</h3></div>
+            <div class="keywhite" onmousedown="b1()"><h3>L</h3></div>
+            <div class="keywhite" onmousedown="b2()"><h3>Z</h3></div>
+            <div class="keywhite" onmousedown="b3()"><h3>X</h3></div>
+            <div class="keywhite" onmousedown="b4()"><h3>C</h3></div>
+            <div class="keywhite" onmousedown="b5()"><h3>V</h3></div>
+            <div class="keywhite" onmousedown="b6()"><h3>B</h3></div>
+            <div class="keywhite" onmousedown="b7()"><h3>N</h3></div>
+            <div class="keywhite" onmousedown="c1()"><h3>M</h3></div>
+            <div class="keywhite" onmousedown="c2()"><h3>Q</h3></div>
+            <div class="keywhite" onmousedown="c3()"><h3>W</h3></div>
+            <div class="keywhite" onmousedown="c4()"><h3>E</h3></div>
+            <div class="keywhite" onmousedown="c5()"><h3>R</h3></div>
+            <div class="keywhite" onmousedown="c6()"><h3>T</h3></div>
+        </div>
+    </div>
+    </div>
+    <AUdio src="./js/A0vL.wav" id="a1"></AUdio>
+    <AUdio src="./others/samples/A2vL.wav" preload="auto" id="a2"></AUdio>
+    <AUdio src="./others/samples/A3vH.wav" preload="auto" id="a3"></AUdio>
+    <AUdio src="./others/samples/A4vH.wav" preload="auto" id="a4"></AUdio>
+    <AUdio src="./others/samples/A5vH.wav" preload="auto" id="a5"></AUdio>
+    <AUdio src="./others/samples/A6vH.wav" preload="auto" id="a6"></AUdio>
+    <AUdio src="./others/samples/C8vH.wav" preload="auto" id="a7"></AUdio>
+    <AUdio src="./others/samples/B0vH.wav" preload="auto" id="b0"></AUdio>
+    <AUdio src="./others/samples/B1vH.wav" preload="auto" id="b1"></AUdio>
+    <AUdio src="./others/samples/B2vH.wav" preload="auto" id="b2"></AUdio>
+    <AUdio src="./others/samples/B3vH.wav" preload="auto" id="b3"></AUdio>
+    <AUdio src="./others/samples/B4vH.wav" preload="auto" id="b4"></AUdio>
+    <AUdio src="./others/samples/B5vH.wav" preload="auto" id="b5"></AUdio>
+    <AUdio src="./others/samples/B6vH.wav" preload="auto" id="b6"></AUdio>
+    <AUdio src="./others/samples/B7vH.wav" preload="auto" id="b7"></AUdio>
+    <AUdio src="./others/samples/C2vH.wav" preload="auto" id="c1"></AUdio>
+    <AUdio src="./others/samples/C2vL.wav" preload="auto" id="c2"></AUdio>
+    <AUdio src="./others/samples/C3vH.wav" preload="auto" id="c3"></AUdio>
+    <AUdio src="./others/samples/C4vH.wav" preload="auto" id="c4"></AUdio>
+    <AUdio src="./others/samples/C5vH.wav" preload="auto" id="c5"></AUdio>
+    <AUdio src="./others/samples/C7vH.wav" preload="auto" id="c6"></AUdio>
+    <AUdio src="./others/samples/D1vH.wav" preload="auto" id="f1"></AUdio>
+    <AUdio src="./others/samples/D2vH.wav" preload="auto" id="f2"></AUdio>
+    <AUdio src="./others/samples/D3vH.wav" preload="auto" id="f3"></AUdio>
+    <AUdio src="./others/samples/D4vH.wav" preload="auto" id="f4"></AUdio>
+    <AUdio src="./others/samples/D5vH.wav" preload="auto" id="f5"></AUdio>
+    <AUdio src="./others/samples/D6vH.wav" preload="auto" id="f6"></AUdio>
+    <AUdio src="./others/samples/D7vH.wav" preload="auto" id="f7"></AUdio>
+    <AUdio src="./others/samples/F1vH.wav" preload="auto" id="f8"></AUdio>
+    <AUdio src="./others/samples/F2vH.wav" preload="auto" id="f9"></AUdio>
+    <AUdio src="./others/samples/F3vH.wav" preload="auto" id="f10"></AUdio>
+    <AUdio src="./others/samples/F4vH.wav" preload="auto" id="f11"></AUdio>
+    <AUdio src="./others/samples/F5vH.wav" preload="auto" id="f12"></AUdio>
+    <AUdio src="./others/samples/F6vH.wav" preload="auto" id="num1"></AUdio>
+    <AUdio src="./others/samples/F7vH.wav" preload="auto" id="num2"></AUdio>
+    <AUdio src="./others/samples/F1vL.wav" preload="auto" id="num3"></AUdio>
+</section>
+</body>
+
+<script src="./js/piano.js"></script>
+</html>

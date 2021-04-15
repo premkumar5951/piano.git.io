@@ -1,0 +1,164 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.438)) , url("../others/2x-no-mark-1.jpg");
+}
+.container{
+    position: absolute;
+    width: 1000px;
+    margin:2em auto;
+    background-color: black;
+    border-top-left-radius: 5em;
+    border-top-right-radius:5em ;
+    top:60%;
+    transform: translateY(-50%);
+}
+.white{
+    display:flex;
+    width:100%;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.keywhite{
+   
+    position: relative;
+    background:white;
+    flex:1;
+    height:270px;
+    align-self: flex-end;
+    border:1px black solid;
+    border-radius: 10px;
+    user-select: none;
+}
+.keywhite h3{
+    text-align: center;
+    display:inline-block;
+    position: absolute;
+    bottom:0px;
+    padding: 10px;
+}
+.wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.black{
+    height:100px;
+display: flex;
+width: auto;
+justify-content: space-evenly;
+}
+.keyblack{
+    height:150px;
+    background: rgb(0, 0, 0);
+    width:35px;
+    border: 1px black solid;
+    z-index: 10;
+    user-select: none;
+}
+.twob{
+    display: flex;
+    width:110px;
+    justify-content: space-evenly;
+}
+.threeb{
+    display: flex;
+    width:160px;
+    justify-content: space-evenly
+}
+.bigb{
+    padding:5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.twob1{
+    position:absolute;
+    top: 100px;
+    left: 16px;
+}
+.threeb1{
+    position:absolute;
+    top: 100px;
+    left: 158px;
+ }
+ .twob2{
+    position:absolute;
+    top: 100px;
+    left: 350px;
+}
+.threeb2{
+    position:absolute;
+    top: 100px;
+    left: 491px;
+ }
+ .twob3{
+    position:absolute;
+    top: 100px;
+    left: 683px;
+}
+.threeb3{
+    position:absolute;
+    top: 100px;
+    left: 824px;
+ }
+section{
+    padding-left:2em;
+   width:1100px;
+   margin:auto auto; 
+}
+.keywhite:active{
+    background: gray;
+}
+
+.keyblack h3{
+    text-align: center;
+    display:inline-block;
+    position: absolute;
+    bottom:0px;
+    padding: 10px;
+    color:white;
+    font-size: 0.9em;
+}
+.keyblack:active{
+    background: rgb(70, 69, 69);
+}
+.head{
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+}
+.container i{
+    color: red;
+    display: inline-block;
+  position: relative;
+  top:15px;
+  animation: beat infinite  0.8s;
+}
+.text{
+    position: absolute;
+left:37%;
+    z-index:50;
+}
+@keyframes beat {
+0% {
+transform: scale(0.8);
+}
+10% {
+    transform: scale(0.9);
+}
+15% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(0.9);
+}
+100% {
+    transform: scale(0.8);
+}
+}
